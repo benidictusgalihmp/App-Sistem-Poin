@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Cats",
-    'summary': 'Module Odoo untuk menyimpan data kucing.',
-    'description': 'Module Odoo untuk menyimpan dan menampilkan data kucing yang ada pada WillyWangky’s Pet Shop.',
+    'name': "Sistem Poin App",
+    'summary': 'Sistem poin karyawan perusahaan.',
+    'description': 'Module Odoo untuk menyimpan dan menampilkan poin karyawan pada perusahaan.',
     'sequence': -100,
-    'author': "Thomas The Tank Engine",
+    'author': "Kelompok K03-G02",
     'category': 'Uncategorized',
     'version': '1.0',
     'depends': ['base'],
@@ -17,9 +17,8 @@
     'demo': [
         'demo/demo.xml',
     ],
-    'qweb': [
-
-    ],
+    'qweb': [],
+    
     'installable': True,
     'application': True,
     'auto_install': False,
