@@ -1,2 +1,2 @@
-# App-Sistem-Poin
-Create Sistem Poin Mobile App with Odoo tools
+# cats_odoo
+Module Odoo contoh untuk menyimpan daftar kucing.
