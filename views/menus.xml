@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <!-- <record id="action_list_anggota" model="ir.actions.act_window">
+    <record id="action_list_anggota" model="ir.actions.act_window">
         <field name="name">Daftar Anggota</field>
         <field name="res_model">anggota.anggota</field>
         <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Belum ada anggota!
+            </p>
+        </field>
     </record>
 
     <record id="action_riwayat" model="ir.actions.act_window">
         <field name="name">Riwayat Transaksi</field>
-        <field name="res_model">riwayat</field>
+        <field name="res_model">riwayat.riwayat</field>
         <field name="view_mode">tree,form</field>
-    </record> -->
+    </record>
 
     <menuitem id="menu_root" 
         name="Sistem Poin"
@@ -19,12 +24,12 @@
     <menuitem id="menu_list_anggota" 
         name="Daftar Anggota"
         parent="menu_root"
-        
+        action="action_list_anggota"
         sequence="1"/>
 
     <menuitem id="menu_riwayat" 
         name="Riwayat Transaksi"
         parent="menu_root"
-        
+        action="action_riwayat"
         sequence="2"/>
 </odoo>
