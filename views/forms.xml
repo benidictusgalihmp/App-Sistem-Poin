@@ -9,7 +9,7 @@
       <form>
         <sheet>
           <group>
-            <field name="ids"/>
+            <field name="id_anggota"/>
             <field name="name"/>
             <field name="department"/>
             <field name="poin"/>
