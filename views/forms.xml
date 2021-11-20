@@ -13,10 +13,10 @@
           <button name="tambah500" string="500 poin" type="object" class="oe_stat_button" icon="fa-plus-circle" confirm="Anda yakin akan menambahkan 500 poin ?"/>
           <button name="tambah1000" string="1000 poin" type="object" class="oe_stat_button" icon="fa-plus-circle" confirm="Anda yakin akan menambahkan 1000 poin ?" style="margin-right:100px;"/>
           
-          <button name="redeem100" string="100 poin" type="object" class="oe_stat_button" icon="fa-minus-circle" confirm="Anda yakin akan me-redeem 100 poin ?"/>
-          <button name="redeem200" string="200 poin" type="object" class="oe_stat_button" icon="fa-minus-circle" confirm="Anda yakin akan me-redeem 200 poin  ?"/>
-          <button name="redeem500" string="500 poin" type="object" class="oe_stat_button" icon="fa-minus-circle" confirm="Anda yakin akan me-redeem 500 poin  ?"/>
-          <button name="redeem1000" string="1000poin" type="object" class="oe_stat_button" icon="fa-minus-circle" confirm="Anda yakin akan me-redeem 1000 poin ?"/>
+          <button name="redeem100" string="100 poin" type="object" class="oe_stat_button" icon="fa-minus-circle" confirm="Anda yakin akan me-redeem 100 poin ? Reward : Rp.10.000"/>
+          <button name="redeem200" string="200 poin" type="object" class="oe_stat_button" icon="fa-minus-circle" confirm="Anda yakin akan me-redeem 200 poin Reward : Rp.20.000?"/>
+          <button name="redeem500" string="500 poin" type="object" class="oe_stat_button" icon="fa-minus-circle" confirm="Anda yakin akan me-redeem 500 poin Reward : Rp.50.000?"/>
+          <button name="redeem1000" string="1000poin" type="object" class="oe_stat_button" icon="fa-minus-circle" confirm="Anda yakin akan me-redeem 1000 poin Reward : Rp.100.000?"/>
         </header>
         <sheet>
           <group>
