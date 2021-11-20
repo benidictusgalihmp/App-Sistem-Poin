@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+  <record model="ir.ui.view" id="anggota_anggota_tree">
+    <field name="name">anggota.anggota.tree</field>
+    <field name="model">anggota.anggota</field>
+    <field name="priority" eval="1"/>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="id_anggota"/>
+        <field name="name"/>
+        <field name="department"/>
+        <field name="poin"/>
+      </tree>
+    </field>
+  </record>
+  
+</odoo>

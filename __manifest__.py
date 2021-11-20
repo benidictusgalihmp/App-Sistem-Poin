@@ -11,7 +11,8 @@
     'data': [
         'security/ir.model.access.csv',
         'views/menus.xml',
-        'views/forms.xml'
+        'views/forms.xml',
+        'views/trees.xml'
     ],
     'demo': [
         'demo/demo.xml',
