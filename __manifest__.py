@@ -4,15 +4,13 @@
     'summary': 'Sistem poin karyawan perusahaan.',
     'description': 'Module Odoo untuk menyimpan dan menampilkan poin karyawan pada perusahaan.',
     'sequence': -100,
-    'author': "Kelompok K03-G02",
+    'author': "AntiKeosKeos",
     'category': 'Uncategorized',
     'version': '1.0',
     'depends': ['base'],
     'data': [
         'security/ir.model.access.csv',
-        'views/cats_menus.xml',
-        'views/cats_trees.xml',
-        'views/cats_forms.xml',
+        'views/menus.xml',
     ],
     'demo': [
         'demo/demo.xml',
