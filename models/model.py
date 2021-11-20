@@ -18,6 +18,7 @@ class Anggota(models.Model):
         ('6', 'Eksternal'), 
         ('7', 'Annissa'), 
     ], string="Departemen", required=True)
+    poin = fields.Integer(string="Poin", required=True)
 
 class Riwayat(models.Model):
     _name = 'riwayat.riwayat' # membuat tabel riwayat pada postgres 
