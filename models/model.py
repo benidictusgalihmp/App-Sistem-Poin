@@ -23,11 +23,43 @@ class Anggota(models.Model):
     ], string="Departemen", required=True)
     poin = fields.Integer(string="Poin", required=True, tracking = True)
 
-    def tambah_poin(self):
-        print("tambah")
+    # tambah
+    def tambah100(self):
+        self.poin = self.poin + 100
+        self.write({'poin' : str(self.poin)})
+    def tambah200(self):
+        self.poin = self.poin + 200
+        self.write({'poin' : str(self.poin)})
+    def tambah500(self):
+        self.poin = self.poin + 500
+        self.write({'poin' : str(self.poin)})
+    def tambah1000(self):
+        self.poin = self.poin + 1000
+        self.write({'poin' : str(self.poin)})
+
+    # redeem
+    def redeem100(self):
+        if self.poin < 100:
+            raise ValidationError(("Poin tidak cukup."))
+        self.poin = self.poin - 100
+        self.write({'poin' : str(self.poin)})
+    def redeem200(self):
+        if self.poin < 200:
+            raise ValidationError(("Poin tidak cukup."))
+        self.poin = self.poin - 200
+        self.write({'poin' : str(self.poin)})
+        if self.poin < 500:
+            raise ValidationError(("Poin tidak cukup."))
+    def redeem500(self):
+        self.poin = self.poin - 500
+        self.write({'poin' : str(self.poin)})
+    def redeem1000(self):
+        if self.poin < 1000:
+            raise ValidationError(("Poin tidak cukup."))
+        self.poin = self.poin - 1000
+        self.write({'poin' : str(self.poin)})
     
-    def redeem_poin(self):
-        print("redeem")
+
 
     @api.constrains('id_anggota')
     def check_id_anggota(self):
