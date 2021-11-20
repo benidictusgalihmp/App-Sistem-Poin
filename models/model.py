@@ -20,6 +20,12 @@ class Anggota(models.Model):
     ], string="Departemen", required=True)
     poin = fields.Integer(string="Poin", required=True)
 
+    def tambah_poin(self):
+        print("tambah")
+    
+    def redeem_poin(self):
+        print("redeem")
+
 class Riwayat(models.Model):
     _name = 'riwayat.riwayat' # membuat tabel riwayat pada postgres 
     _description = 'Data riwayat' # deskripsi tabel

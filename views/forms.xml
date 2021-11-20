@@ -6,7 +6,11 @@
     <field name="model">anggota.anggota</field>
     <field name="priority" eval="1"/>
     <field name="arch" type="xml">
-      <form>
+      <form string="Anggota">
+        <header>
+          <button name="tambah_poin" string="Tambah poin" type="object" class="oe_highlight"/>
+          <button name="redeem_poin" string="Redeem poin" type="object" class="oe_highlight"/>
+        </header>
         <sheet>
           <group>
             <field name="id_anggota"/>
