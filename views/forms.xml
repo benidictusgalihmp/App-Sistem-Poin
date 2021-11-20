@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+  <record model="ir.ui.view" id="cats_cat_form">
+    <field name="name">anggota.anggota.form</field>
+    <field name="model">anggota.anggota</field>
+    <field name="priority" eval="1"/>
+    <field name="arch" type="xml">
+      <form>
+        <sheet>
+          <group>
+            <field name="ids"/>
+            <field name="name"/>
+            <field name="department"/>
+            <field name="poin"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>  
+</odoo>

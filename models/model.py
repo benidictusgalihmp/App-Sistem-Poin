@@ -6,7 +6,7 @@ class Anggota(models.Model):
     _name = 'anggota.anggota' # membuat tabel anggota_anggota pada postgres 
     _description = 'Data Anggota' # deskripsi tabel
 
-    id = fields.Integer(string="ID", required=True)
+    ids = fields.Integer(string="ID", required=True)
     name = fields.Char(string="Nama", required=True)
     department = fields.Selection(selection=[
         ('0', 'Ketua (G1)'), 
