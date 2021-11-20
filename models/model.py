@@ -3,7 +3,8 @@
 from odoo import models, fields, api
 
 class Anggota(models.Model):
-    _name = 'anggota.anggota' # membuat tabel anggota_anggota pada postgres 
+    _name = 'anggota.anggota' # membuat tabel anggota_anggota pada postgres
+    _inherit =  ['mail.thread','mail.activity.mixin']
     _description = 'Data Anggota' # deskripsi tabel
 
     id_anggota = fields.Integer(string="ID", required=True)
@@ -18,7 +19,7 @@ class Anggota(models.Model):
         ('6', 'Eksternal'), 
         ('7', 'Annissa'), 
     ], string="Departemen", required=True)
-    poin = fields.Integer(string="Poin", required=True)
+    poin = fields.Integer(string="Poin", required=True, tracking = True)
 
     def tambah_poin(self):
         print("tambah")

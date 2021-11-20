@@ -7,7 +7,7 @@
     'author': "AntiKeosKeos",
     'category': 'Uncategorized',
     'version': '1.0',
-    'depends': ['base'],
+    'depends': ['base','mail'],
     'data': [
         'security/ir.model.access.csv',
         'views/menus.xml',
