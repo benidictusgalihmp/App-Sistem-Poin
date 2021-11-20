@@ -1,43 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
-        
-        <!-- Jenis -->
-        <record id='cats_cat_type1' model='cats.cat.type'>
-            <field name='name' type='char'>Persian</field>
+        <record id='anggota1' model='anggota.anggota'>
+            <field name="id_anggota" type='int'>10516035</field>
+            <field name="name" type='char'>Hansel Taffarel</field>
+            <field name="department" type='char'>0</field>
+            <field name="poin" type='int'>100</field>
         </record>
-        <record id='cats_cat_type2' model='cats.cat.type'>
-            <field name='name' type='char'>Maine Coon</field>
+        <record id='anggota2' model='anggota.anggota'>
+            <field name="id_anggota" type='int'>11617039</field>
+            <field name="name" type='char'>Disha Fitri Azalia</field>
+            <field name="department" type='char'>1</field>
+            <field name="poin" type='int'>400</field>
         </record>
-        <record id='cats_cat_type3' model='cats.cat.type'>
-            <field name='name' type='char'>British Shorthair</field>
+        <record id='anggota3' model='anggota.anggota'>
+            <field name="id_anggota" type='int'>13516133</field>
+            <field name="name" type='char'>Rifky Ramadan</field>
+            <field name="department" type='char'>2</field>
+            <field name="poin" type='int'>900</field>
         </record>
-        
-        <!-- Kucing -->
-        <record id='cats_cat1' model='cats.cat'>
-            <field name='name' type='char'>Kucing 1</field>
-            <field name='color' type='char'>0</field>
-            <field name='type' ref='cats_cat_type1'/>
+        <record id='anggota4' model='anggota.anggota'>
+            <field name="id_anggota" type='int'>12116048</field>
+            <field name="name" type='char'>Muhammad Farid</field>
+            <field name="department" type='char'>3</field>
+            <field name="poin" type='int'>800</field>
         </record>
-        <record id='cats_cat2' model='cats.cat'>
-            <field name='name' type='char'>Kucing 2</field>
-            <field name='color' type='char'>1</field>
-            <field name='type' ref='cats_cat_type1'/>
+        <record id='anggota5' model='anggota.anggota'>
+            <field name="id_anggota" type='int'>10116008</field>
+            <field name="name" type='char'>Muh Izzul Islam AS</field>
+            <field name="department" type='char'>5</field>
+            <field name="poin" type='int'>700</field>
         </record>
-        <record id='cats_cat3' model='cats.cat'>
-            <field name='name' type='char'>Kucing 3</field>
-            <field name='color' type='char'>2</field>
-            <field name='type' ref='cats_cat_type2'/>
+        <record id='anggota6' model='anggota.anggota'>
+            <field name="id_anggota" type='int'>10516039</field>
+            <field name="name" type='char'>Dicky Cuandi</field>
+            <field name="department" type='char'>4</field>
+            <field name="poin" type='int'>400</field>
         </record>
-        <record id='cats_cat4' model='cats.cat'>
-            <field name='name' type='char'>Kucing 4</field>
-            <field name='color' type='char'>3</field>
-            <field name='type' ref='cats_cat_type2'/>
+        <record id='anggota7' model='anggota.anggota'>
+            <field name="id_anggota" type='int'>10216014</field>
+            <field name="name" type='char'>Muhammad Hafidz Setiawan</field>
+            <field name="department" type='char'>7</field>
+            <field name="poin" type='int'>200</field>
         </record>
-        <record id='cats_cat5' model='cats.cat'>
-            <field name='name' type='char'>Kucing 5</field>
-            <field name='color' type='char'>4</field>
-            <field name='type' ref='cats_cat_type3'/>
+        <record id='anggota8' model='anggota.anggota'>
+            <field name="id_anggota" type='int'>10317032</field>
+            <field name="name" type='char'>Ishak D Makanuai</field>
+            <field name="department" type='char'>6</field>
+            <field name="poin" type='int'>400</field>
+        </record>
+        <record id='anggota9' model='anggota.anggota'>
+            <field name="id_anggota" type='int'>10217036</field>
+            <field name="name" type='char'>Haris Jalaludin</field>
+            <field name="department" type='char'>5</field>
+            <field name="poin" type='int'>300</field>
+        </record>
+        <record id='anggota10' model='anggota.anggota'>
+            <field name="id_anggota" type='int'>10217034</field>
+            <field name="name" type='char'>Ahmad Fikri Fardiansyah Idris</field>
+            <field name="department" type='char'>4</field>
+            <field name="poin" type='int'>600</field>
+        </record>
+        <record id='anggota11' model='anggota.anggota'>
+            <field name="id_anggota" type='int'>10218032</field>
+            <field name="name" type='char'>Muhana Salsabila</field>
+            <field name="department" type='char'>3</field>
+            <field name="poin" type='int'>400</field>
+        </record>
+        <record id='anggota12' model='anggota.anggota'>
+            <field name="id_anggota" type='int'>10518034</field>
+            <field name="name" type='char'>Muhamad Fauzan Rizky Adisty Erlangga</field>
+            <field name="department" type='char'>6</field>
+            <field name="poin" type='int'>300</field>
+        </record>
+        <record id='anggota13' model='anggota.anggota'>
+            <field name="id_anggota" type='int'>10218076</field>
+            <field name="name" type='char'>Fathiya Rahmi</field>
+            <field name="department" type='char'>4</field>
+            <field name="poin" type='int'>1200</field>
+        </record>
+        <record id='anggota14' model='anggota.anggota'>
+            <field name="id_anggota" type='int'>10417039</field>
+            <field name="name" type='char'>Rengga Jati Janottama</field>
+            <field name="department" type='char'>7</field>
+            <field name="poin" type='int'>400</field>
+        </record>
+        <record id='anggota15' model='anggota.anggota'>
+            <field name="id_anggota" type='int'>10716032</field>
+            <field name="name" type='char'>Monica Febiola Br Rajagukguk</field>
+            <field name="department" type='char'>2</field>
+            <field name="poin" type='int'>200</field>
         </record>
 
     </data>
