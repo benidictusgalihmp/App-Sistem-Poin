@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
+from odoo.exceptions import ValidationError
 
 class Anggota(models.Model):
     _name = 'anggota.anggota' # membuat tabel anggota_anggota pada postgres 
@@ -18,13 +19,22 @@ class Anggota(models.Model):
         ('6', 'Eksternal'), 
         ('7', 'Annissa'), 
     ], string="Departemen", required=True)
-    poin = fields.Integer(string="Poin", required=True)
+    poin = fields.Integer(string="Poin", required=True, track_visibility="always")
 
     def tambah_poin(self):
         print("tambah")
     
     def redeem_poin(self):
         print("redeem")
+
+    @api.constrains('id_anggota')
+    def check_id_anggota(self):
+        for rec in self:
+            anggota = self.env['anggota.anggota'].search([('id_anggota','=',rec.id_anggota),('id','!=',rec.id)])
+            if anggota:
+                raise ValidationError(("ID %s Already Exists" % rec.id_anggota))
+            
+
 
 class Riwayat(models.Model):
     _name = 'riwayat.riwayat' # membuat tabel riwayat pada postgres 
