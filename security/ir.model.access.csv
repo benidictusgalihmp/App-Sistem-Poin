@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_sistem_poin_anggota,access.sistem.poin.anggota,model_anggota_anggota,,1,1,1,1
+access_sistem_poin_riwayat,access.sistem.poin.riwayat,model_riwayat_riwayat,,1,1,1,1
