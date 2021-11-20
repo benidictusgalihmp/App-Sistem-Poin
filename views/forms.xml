@@ -21,7 +21,6 @@
         <sheet>
           <group>
             <field name="id_anggota"/>
-            <separator string="Links" colspan="4"/>
             <field name="name"/>
             <field name="department"/>
             <field name="poin"/>
