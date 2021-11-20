@@ -7,6 +7,7 @@ class Anggota(models.Model):
     _name = 'anggota.anggota' # membuat tabel anggota_anggota pada postgres
     _inherit =  ['mail.thread','mail.activity.mixin']
     _description = 'Data Anggota' # deskripsi tabel
+    _order = "poin desc"
 
     id_anggota = fields.Integer(string="ID", required=True)
     name = fields.Char(string="Nama", required=True)
