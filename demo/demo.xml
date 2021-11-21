@@ -92,5 +92,46 @@
             <field name="poin" type='int'>200</field>
         </record>
 
+        <!-- riwayat -->
+        <record id='riwayat1' model='riwayat.riwayat'>
+            <field name="id_anggota" type='int'>10716032</field>
+            <field name="nama" type='char'>Monica Febiola Br Rajagukguk</field>
+            <field name="poin_lama" type='int'>0</field>
+            <field name="poin_baru" type='int'>200</field>
+            <field name="transaksi" type='char'>+200</field>
+        </record>
+
+        <record id='riwayat2' model='riwayat.riwayat'>
+            <field name="id_anggota" type='int'>10218032</field>
+            <field name="nama" type='char'>Muhana Salsabila</field>
+            <field name="poin_lama" type='int'>0</field>
+            <field name="poin_baru" type='int'>100</field>
+            <field name="transaksi" type='char'>+100</field>
+        </record>
+
+        <record id='riwayat3' model='riwayat.riwayat'>
+            <field name="id_anggota" type='int'>10417039</field>
+            <field name="nama" type='char'>Rengga Jati Janottama</field>
+            <field name="poin_lama" type='int'>0</field>
+            <field name="poin_baru" type='int'>500</field>
+            <field name="transaksi" type='char'>+500</field>
+        </record>
+
+        <record id='riwayat4' model='riwayat.riwayat'>
+            <field name="id_anggota" type='int'>10217034</field>
+            <field name="nama" type='char'>Ahmad Fikri Fardiansyah Idris</field>
+            <field name="poin_lama" type='int'>0</field>
+            <field name="poin_baru" type='int'>500</field>
+            <field name="transaksi" type='char'>+500</field>
+        </record>
+
+        <record id='riwayat5' model='riwayat.riwayat'>
+            <field name="id_anggota" type='int'>10317032</field>
+            <field name="nama" type='char'>Ishak D Makanuai</field>
+            <field name="poin_lama" type='int'>0</field>
+            <field name="poin_baru" type='int'>1000</field>
+            <field name="transaksi" type='char'>+1000</field>
+        </record>
+
     </data>
 </odoo>
