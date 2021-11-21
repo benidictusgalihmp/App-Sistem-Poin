@@ -6,7 +6,7 @@
     <field name="model">anggota.anggota</field>
     <field name="priority" eval="1"/>
     <field name="arch" type="xml">
-      <form string="Anggota">
+      <form string="Anggota" create="false">
         <header>
           <button name="tambah100" string="100 poin" type="object" class="oe_stat_button" icon="fa-plus-circle" confirm="Anda yakin akan menambahkan 100 poin ?"/>
           <button name="tambah200" string="200 poin" type="object" class="oe_stat_button" icon="fa-plus-circle" confirm="Anda yakin akan menambahkan 200 poin ?" />
@@ -33,4 +33,24 @@
       </form>
     </field>
   </record>  
+
+  <record model="ir.ui.view" id="riwayat_riwayat_form">
+    <field name="name">riwayat.riwayat.form</field>
+    <field name="model">riwayat.riwayat</field>
+    <field name="priority" eval="1"/>
+    <field name="arch" type="xml">
+      <form string="Transaksi" edit="false" create="false">
+        <sheet>
+          <group>
+            <field name="id_anggota"/>
+            <field name="nama"/>
+            <field name="poin_lama"/>
+            <field name="transaksi"/>
+            <field name="poin_baru"/>
+            <field name="write_date"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
 </odoo>
