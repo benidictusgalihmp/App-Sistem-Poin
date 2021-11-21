@@ -102,7 +102,7 @@ class Anggota(models.Model):
             'nama' : self.name,
             'poin_lama' : poin_lama,
             'poin_baru' : self.poin,
-            'transaksi' : perubahan_poin
+            'transaksi' : transaksi
         }
         self.env['riwayat.riwayat'].create(vals)
 

@@ -14,5 +14,21 @@
       </tree>
     </field>
   </record>
+
+  <record model="ir.ui.view" id="riwayat_riwayat_tree">
+    <field name="name">riwayat.riwayat.tree</field>
+    <field name="model">riwayat.riwayat</field>
+    <field name="priority" eval="1"/>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="id_anggota"/>
+        <field name="nama"/>
+        <field name="poin_lama"/>
+        <field name="transaksi"/>
+        <field name="poin_baru"/>
+        <field name="write_date"/>
+      </tree>
+    </field>
+  </record>
   
 </odoo>
